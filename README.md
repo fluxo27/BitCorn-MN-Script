@@ -1,7 +1,7 @@
 ![Example-Location](https://media.discordapp.net/attachments/491859966261461002/514158760965701632/corn-112.png)
 
 # Bitcorn Node Masternode Setup Guide (Ubuntu 16.04)
-This guide will assist you in setting up a Ad Node Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
+This guide will assist you in setting up a Bitcorn Node Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
 
 If you require further assistance contact the support team @ [Discord](https://discord.gg/BBBms9Z)
 ***
@@ -205,9 +205,6 @@ Click "File Save"
 If you do, congratulations! You have now setup a masternode. If you do not, please contact [support](https://discord.gg/BBBms9Z) and they will assist you.  
 ***
 
-## Donations:  
-
-I do this For free :)
 
 To my little green friend RIP
 
