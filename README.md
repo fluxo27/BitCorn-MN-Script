@@ -197,6 +197,7 @@ Click "File Save"
 * Check the status of your masternode within the VPS by using the command below:
 
 `bitcorn-cli masternode status`
+
 `bitcorn-cli getinfo`
 
 *You should see ***status 4***
