@@ -151,7 +151,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***step 4***
 * Go to the console within the wallet
 
-![Example-console](https://i.imgur.com/MtMs0Mm.png)
+![Example-console](https://i.imgur.com/sXWA7Ym.png)
 ***
 
 ***Step 5***
@@ -159,7 +159,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 `masternode outputs`
 
-![Example-outputs](https://i.imgur.com/EEKIIKw.png)
+![Example-outputs](https://i.imgur.com/gynQDX8.png)
 ***
 
 ***Step 6***
@@ -171,7 +171,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ***Step 1***
 * Go to the tools tab within the wallet and click "Open Masternode Configuration File"
-![Example-create](https://i.imgur.com/3oGluKg.png)
+![Example-create](https://i.imgur.com/hI4bMq5.png)
 ***
 
 ***Step 2***
