@@ -114,7 +114,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 `bash bitcorn_install.sh`
 
-![Example-Bash](https://i.imgur.com/JDOBjgR.png)
+![Example-Bash](https://i.imgur.com/VnueFAi.png)
 
 ***
 
