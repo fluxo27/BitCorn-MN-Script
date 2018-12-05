@@ -178,7 +178,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 * Fill in the form.
 * For `Alias` type something like "MN01" **don't use spaces**
-* The `Address` is the IP and port of your server (this will be in the Bitvise terminal that you still have open); make sure the port is set to **2152**.
+* The `Address` is the IP and port of your server (this will be in the Bitvise terminal that you still have open); make sure the port is set to **12211**.
 * The `Genkey` is your masternode Gen key output (this is also in the Bitvise terminal that you have open).
 * The `TxHash` is the transaction ID/long key that you copied to the text file.
 * The `Output Index` is the 0 or 1 that you copied to your text file.
