@@ -24,36 +24,20 @@ GREEN="\033[0;32m"
 NC='\033[0m'
 MAG='\e[1;35m'
 
-function purgeOldInstallation() {
-    echo -e "${GREEN}Searching and removing old $COIN_NAME files and configurations and making a backup to $HOME/Bitcorns if they exist ${NC}"
-    if [[ -f $(eval echo $CONFIGFOLDER/wallet.dat) ]]; then
-    echo -e "Exists, making backup${NC}" 
-if [[ ! -d $(eval echo $COIN_BACKUP) ]]; then    
-mkdir $(eval echo $COIN_BACKUP)
-fi
-    cp  $(eval echo $CFFULLPATH $COIN_BACKUP ) 2> /dev/null
-    cp  $(eval echo $CONFIGFOLDER/masternode.conf $COIN_BACKUP ) 2> /dev/null
-    cp $(eval echo $CONFIGFOLDER/wallet.dat $COIN_BACKUP ) 2> /dev/null
-fi 
-
+purgeOldInstallation() {
+    echo -e "${GREEN}Searching and removing old $COIN_NAME files and configurations${NC}"
     #kill wallet daemon
-    systemctl stop $COIN_NAME.service > /dev/null 2>&1
-    sudo killall $COIN_DAEMON > /dev/null 2>&1
-	# Save Key 
-	OLDKEY=$(awk -F'=' '/masternodeprivkey/ {print $2}' $CFFULLPATH 2> /dev/null)
-	if [[ $OLDKEY ]]; then
-    		echo -e "${CYAN}Saving Old Installation Genkey ${WHITE} $OLDKEY"
-	fi
+    sudo killall bitcornd > /dev/null 2>&1
+    sleep 5
     #remove old ufw port allow
-    sudo ufw delete allow $COIN_PORT/tcp > /dev/null 2>&1
+    sudo ufw delete allow 12211/tcp > /dev/null 2>&1
     #remove old files
-    sudo rm -rf $CONFIGFOLDER > /dev/null 2>&1
-    sudo rm -rf /usr/local/bin/$COIN_CLI /usr/local/bin/$COIN_DAEMON> /dev/null 2>&1
-    sudo rm -rf /usr/bin/$COIN_CLI /usr/bin/$COIN_DAEMON > /dev/null 2>&1
-    sudo rm -rf /tmp/*
-    mkdir $CONFIGFOLDER
-    sudo rm -rf ~/aegeus    
-echo -e "${GREEN}* Done${NONE}";
+    if [ -d "~/.bitcorn" ]; then
+        sudo rm -rf ~/.bitcorn > /dev/null 2>&1
+    fi
+    #remove binaries
+    cd /usr/local/bin && sudo rm bitcorn-cli bitcornd > /dev/null 2>&1 && cd
+    echo -e "${GREEN}* Done${NONE}";
 }
 
 function download_node() {
@@ -295,8 +279,8 @@ function setup_node() {
 ##### Main #####
 clear
 
-checks
 purgeOldInstallation
+checks
 prepare_system
 download_node
 setup_node
