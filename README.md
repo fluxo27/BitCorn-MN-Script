@@ -189,8 +189,8 @@ Click "File Save"
 
 ***Step 3***
 * Close out of the wallet and reopen Wallet
-*Click on the Masternodes tab "My masternodes"
-* Click start all in the masternodes tab
+*Click on Tools > Debug Console 
+* Type > startmasternode alias 0 <alias> WITHOUT <> and press ENTER 
 ***
 
 ***step 4***
@@ -202,10 +202,8 @@ Click "File Save"
 
 *You should see ***status 4***
 
-If you do, congratulations! You have now setup a masternode. If you do not, please contact [support](https://discord.gg/BBBms9Z) and they will assist you.  
+If you do, congratulations! You have now setup a masternode. If you do not, please contact [support] iamtheDESIKUKKAD#0001 on discord and and I will assist you.  
 ***
 
+HAPPY REWARDS !!!
 
-To my little green friend RIP
-
-BitYoda!
