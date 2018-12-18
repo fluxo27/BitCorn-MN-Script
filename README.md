@@ -190,7 +190,7 @@ Click "File Save"
 ***Step 3***
 * Close out of the wallet and reopen Wallet
 *Click on Tools > Debug Console 
-* Type > startmasternode alias 0 <alias> WITHOUT <> and press ENTER 
+Type > startmasternode alias 0 <wallet alias> and press ENTER
 ***
 
 ***step 4***
