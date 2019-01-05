@@ -3,7 +3,7 @@
 # Bitcorn Node Masternode Setup Guide (Ubuntu 16.04)
 This guide will assist you in setting up a Bitcorn Node Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
 
-If you require further assistance contact the support team @ [Discord](https://discord.gg/BBBms9Z)
+If you require further assistance contact the support team @ [Discord](https://discord.gg/eJQJeBB)
 ***
 ## Requirements
 1. **10,000,000 Bitcorn coins.**
