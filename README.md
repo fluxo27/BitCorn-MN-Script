@@ -3,7 +3,7 @@
 # Bitcorn Node Masternode Setup Guide (Ubuntu 16.04)
 This guide will assist you in setting up a Bitcorn Node Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
 
-If you require further assistance contact the support team @ [Discord](https://discord.gg/BBBms9Z)
+If you require further assistance contact the support team @ [Discord](https://discord.gg/eJQJeBB)
 ***
 ## Requirements
 1. **10,000,000 Bitcorn coins.**
@@ -39,8 +39,8 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 
 ***Step 5***
-* Choose a server size: $5/mo will be fine
-![Example-OS](https://i.imgur.com/UoGoHcM.png)
+* Choose a server size: $3.50 or $5/mo will be fine
+![Example-OS](https://i.imgur.com/9CIYekk.png)
 ***
 
 ***Step 6***
@@ -64,52 +64,49 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***Step 2***
 * Select the correct installer depending upon your operating system. Then follow the install instructions.
 
-![Example-PuttyInstaller](https://i.imgur.com/yF3694G.png)
+![Example-PuttyInstaller](https://i.imgur.com/TmzV977.png)
 ***
 
 
 ## Section C: Connecting to the VPS & Installing the MN script via Bitvise.
 
 ***Step 1***
-* Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server.
+* Copy your VPS IP (find this within the server tab @ Vultr and clicking on your server.)
 ![Example-Vultr](https://i.imgur.com/spEVVCy.png)
 ***
 
 ***Step 2***
-* Open the bitvise application and fill in the "Hostname" box with the IP of your VPS then click "Open"
-![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
+* Open the bitvise application, Click New Profile and fill in the "Hostname" box with the IP of your VPS then Port number "22".
+![Example-PuttyInstaller](https://i.imgur.com/uvc0Ysp.png)
 ***
 
 ***Step 3***
-* Once you have clicked open it will open a security alert (click yes).  
+* Input the username "root" and copy your password from the VULTR Server Page.  
+* If you want you can save your password to your Bitvise profile just tick the Store Encrypted password in profile.
+![Example-RootPass](https://i.imgur.com/JnXQXav.png)
+![Example-BitvisePass](https://i.imgur.com/BxVCWFA.png)
 ***
 
 
 ***Step 4***
-* Type "root" as the login/username then press enter
+* Save your profile and click "Log in" at the bottom of Bitvise
 
-![Example-Root](https://i.imgur.com/11GMkvA.png)
+![Example-Save](https://i.imgur.com/uMwBz0N.png)
+![Example-LoginBitvise](https://i.imgur.com/BJAGVr6.png)
 ***
 
 ***Step 5***
-* Copy the root password from the VULTR server page.
-![Example-RootPass](https://i.imgur.com/JnXQXav.png)
-
+* Click login at the bottom of the Bitvise client.
+![Example-LoginBitvise](https://i.imgur.com/BJAGVr6.png)
 ***
-
 
 ***Step 6***
-* Paste the password into the Bitvise terminal by right clicking (it will not show the password so just press enter)
-![Example-RootPassEnter](https://i.imgur.com/34Qky1K.png)
-***
-
-***Step 7***
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 
 `wget -N https://raw.githubusercontent.com/BITCORNtimes/BitCorn-MN-Script/master/bitcorn_install.sh`
 ***
 
-***Step 8***
+***Step 7***
 * Paste the code below into the Bitvise terminal then press enter
 
 `bash bitcorn_install.sh`
@@ -118,17 +115,17 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ***
 
-***Step 9***
+***Step 8***
 * Sit back and wait for the install (this will take a couple of minutes)
 ***
 
-***Step 10***
-* When prompted to enter your Gen key - press enter
+***Step 9***
+* When prompted to enter your Gen key - press enter (dont type anything just hit Enter)
 
 ![Example-installing](https://i.imgur.com/sLvWd1S.png)
 ***
 
-***Step 11***
+***Step 10***
 * You will now see all of the relevant information for your server.
 * Keep this terminal open as we will need the info for the wallet setup.
 ![Example-installing](https://i.imgur.com/Q87LcnW.png)
@@ -137,11 +134,12 @@ If you require further assistance contact the support team @ [Discord](https://d
 ## Section D: Preparing the Local wallet
 
 ***Step 1***
-* Download and install on the local PC / mac the Bitcorn wallet from [here](https://github.com/BITCORNtimes)
+* Download and install on the local PC / mac the Bitcorn wallet from [here](https://bitcorntimes.com/bitcorn/)
 ***
 
 ***Step 2***
 * Send EXACTLY 10,000,000 Bitcorn to a receive address within your wallet.
+* If you want to make a secondary address from inside the wallet, File > Reciveving Addresses > New.
 ***
 
 ***Step 3***
@@ -149,7 +147,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 
 ***step 4***
-* Go to the console within the wallet
+* Go to the console within the wallet, Tools > Debug Console 
 
 ![Example-console](https://i.imgur.com/sXWA7Ym.png)
 ***
@@ -188,9 +186,10 @@ Click "File Save"
 ***
 
 ***Step 3***
-* Close out of the wallet and reopen Wallet
-*Click on Tools > Debug Console 
-Type > startmasternode alias 0 <wallet alias> and press ENTER
+* Close out of the Config file and back in the Wallet 
+* Click on Tools > Debug Console 
+* Type > startmasternode alias 0 'wallet alias' and press ENTER (without the commas)
+* eg: startmasternode alias 0 cornmn1
 ***
 
 ***step 4***
@@ -202,7 +201,7 @@ Type > startmasternode alias 0 <wallet alias> and press ENTER
 
 *You should see ***status 4***
 
-If you do, congratulations! You have now setup a masternode. If you do not, please contact [support] iamtheDESIKUKKAD#0001 on discord and and I will assist you.  
+If you do, congratulations! You have now setup a masternode. If you do not, please contact [support] iamtheDESIKUKKAD#1000 on discord and and I will assist you.  
 ***
 
 HAPPY REWARDS !!!
