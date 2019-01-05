@@ -188,7 +188,8 @@ Click "File Save"
 ***Step 3***
 * Close out of the Config file and back in the Wallet 
 *Click on Tools > Debug Console 
-*Type > startmasternode alias 0 <wallet alias> and press ENTER
+*Type > startmasternode alias 0 'wallet alias' and press ENTER (without the commas)
+*eg: startmasternode alias 0 cornmn1
 ***
 
 ***step 4***
@@ -200,7 +201,7 @@ Click "File Save"
 
 *You should see ***status 4***
 
-If you do, congratulations! You have now setup a masternode. If you do not, please contact [support] iamtheDESIKUKKAD#0001 on discord and and I will assist you.  
+If you do, congratulations! You have now setup a masternode. If you do not, please contact [support] iamtheDESIKUKKAD#1000 on discord and and I will assist you.  
 ***
 
 HAPPY REWARDS !!!
