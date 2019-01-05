@@ -120,7 +120,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 
 ***Step 9***
-* When prompted to enter your Gen key - press enter (dont enter anything just hit Enter)
+* When prompted to enter your Gen key - press enter (dont type anything just hit Enter)
 
 ![Example-installing](https://i.imgur.com/sLvWd1S.png)
 ***
