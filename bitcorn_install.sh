@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.bitcorn'
 COIN_DAEMON='bitcornd' 
 COIN_CLI='bitcorn-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/BITCORNProject/bitcorn/releases/download/v1.1/corn-daemon.zip'
+COIN_TGZ='https://github.com/BITCORNProject/BITCORN/releases/download/v1.2.0/Bitcorn-1.2.0-daemon-ubuntu_16.04.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='BitCorn'
 COIN_PORT=12211
@@ -45,7 +45,7 @@ function download_node() {
   cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TGZ
   compile_error
-  unzip $COIN_ZIP >/dev/null 2>&1
+  tar xzvf $COIN_ZIP >/dev/null 2>&1
   chmod +x $COIN_DAEMON $COIN_CLI
   compile_error
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
