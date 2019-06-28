@@ -138,7 +138,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 
 ***Step 2***
-* Send EXACTLY 10,000,000 Bitcorn to a receive address within your wallet.
+* Send EXACTLY 10,000,000 Bitcorn in one transaction to a receive address within your wallet.
 * If you want to make a secondary address from inside the wallet, File > Reciveving Addresses > New.
 ***
 
@@ -189,7 +189,8 @@ Click "File Save"
 * Close out of the Config file and back in the Wallet 
 * Click on Tools > Debug Console 
 * Type > startmasternode alias 0 'wallet alias' and press ENTER (without the commas)
-* eg: startmasternode alias 0 cornmn1
+* Use the same alias you have chosen in Step 2
+* eg: startmasternode alias 0 MN01
 ***
 
 ***step 4***
